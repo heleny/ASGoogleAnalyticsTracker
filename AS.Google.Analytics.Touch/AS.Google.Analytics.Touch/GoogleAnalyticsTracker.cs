@@ -4,7 +4,7 @@ using AS.Google.Analytics;
 
 namespace AS.Google.Analytics.Touch
 {
-    public class GoogleAnalyticsTracker :  IGoogleAnalyticsTracker
+    public class GoogleAnalyticsTracker : IGoogleAnalyticsTracker
     {
         private const string OFFLINE = "Offline";
         private static string trackingId;

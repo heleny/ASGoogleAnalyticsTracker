@@ -4,7 +4,7 @@ using System;
 
 namespace AS.Google.Analytics.Droid
 {
-    public class GoogleAnalyticsTracker :  IGoogleAnalyticsTracker
+    public class GoogleAnalyticsTracker : IGoogleAnalyticsTracker
     {
         private const string OFFLINE = "Offline";
         private static string trackingId;
