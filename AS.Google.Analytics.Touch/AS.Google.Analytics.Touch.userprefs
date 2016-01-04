@@ -1,0 +1,10 @@
+﻿<Properties StartupItem="AS.Google.Analytics.Touch/AS.Google.Analytics.Touch.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.heleny" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../helenyang-wp/PropertyTracker.Core/PropertyTracker.Core/Sqlite/DBConnection.cs" line="142" offsetX="696" offsetY="2115" expression="users" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

@@ -1,0 +1,10 @@
+﻿<Properties StartupItem="AS.Google.Analytics.Droid/AS.Google.Analytics.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../helenyang-wp/PropertyTracker.Core/PropertyTracker.Core/Sqlite/DBConnection.cs" line="142" offsetX="696" offsetY="2115" expression="users" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
