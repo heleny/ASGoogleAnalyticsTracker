@@ -11,6 +11,7 @@ namespace AS.Google.Analytics.Droid
         private static GoogleAnalyticsTracker Instance;
 
         private GoogleAnalyticsTracker(string trackingID) {
+            trackingId = trackingID;
             var analytics = GoogleAnalytics.GetInstance (Application.Context);
             analytics.SetLocalDispatchPeriod(10);
             GaTracker = analytics.NewTracker(trackingId);
