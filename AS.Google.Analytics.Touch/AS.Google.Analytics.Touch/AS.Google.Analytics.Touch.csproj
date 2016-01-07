@@ -51,4 +51,10 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AS.Google.Analytics\AS.Google.Analytics\AS.Google.Analytics.csproj">
+      <Project>{54FBE051-671F-41AA-BF97-3644CE8C67F0}</Project>
+      <Name>AS.Google.Analytics</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
