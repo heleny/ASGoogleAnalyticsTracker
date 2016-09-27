@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.props')" />
+  <Import Project="..\..\..\aamobile\packages\Xamarin.Build.Download.0.2.1\build\Xamarin.Build.Download.props" Condition="Exists('..\..\..\aamobile\packages\Xamarin.Build.Download.0.2.1\build\Xamarin.Build.Download.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -34,7 +36,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Google.Analytics">
-      <HintPath>..\packages\Xamarin.Google.iOS.Analytics.3.13.0.0\lib\Xamarin.iOS10\Google.Analytics.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Google.iOS.Analytics.3.14.0.8\lib\Xamarin.iOS10\Google.Analytics.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +44,8 @@
     <Compile Include="GoogleAnalyticsTracker.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\..\..\aamobile\packages\Xamarin.Build.Download.0.2.1\build\Xamarin.Build.Download.targets" Condition="Exists('..\..\..\aamobile\packages\Xamarin.Build.Download.0.2.1\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\..\..\aamobile\packages\Xamarin.Google.iOS.Analytics.3.14.0.7\build\Xamarin.Google.iOS.Analytics.targets" Condition="Exists('..\..\..\aamobile\packages\Xamarin.Google.iOS.Analytics.3.14.0.7\build\Xamarin.Google.iOS.Analytics.targets')" />
   <ItemGroup>
     <XamarinComponentReference Include="googleiosanalytics">
       <Version>3.13.0.0</Version>
@@ -49,12 +53,14 @@
     </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\AS.Google.Analytics\AS.Google.Analytics\AS.Google.Analytics.csproj">
       <Project>{54FBE051-671F-41AA-BF97-3644CE8C67F0}</Project>
       <Name>AS.Google.Analytics</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\Xamarin.Google.iOS.Analytics.3.14.0.8\build\Xamarin.Google.iOS.Analytics.targets" Condition="Exists('..\packages\Xamarin.Google.iOS.Analytics.3.14.0.8\build\Xamarin.Google.iOS.Analytics.targets')" />
 </Project>
