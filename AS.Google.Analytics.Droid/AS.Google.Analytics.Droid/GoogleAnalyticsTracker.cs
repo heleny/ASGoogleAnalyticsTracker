@@ -13,7 +13,11 @@ namespace AS.Google.Analytics.Droid
         private GoogleAnalyticsTracker(string trackingID) {
             trackingId = trackingID;
             var analytics = GoogleAnalytics.GetInstance (Application.Context);
-            analytics.SetLocalDispatchPeriod(10);
+#if (DEBUG || ADHOC)
+            analytics.SetLocalDispatchPeriod (10);
+#else
+            analytics.SetLocalDispatchPeriod(24 * 60 * 60);
+#endif
             GaTracker = analytics.NewTracker(trackingId);
             GaTracker.EnableAdvertisingIdCollection(true);
             GaTracker.EnableExceptionReporting(true);

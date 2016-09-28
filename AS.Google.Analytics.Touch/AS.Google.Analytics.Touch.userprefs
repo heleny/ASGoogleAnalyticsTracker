@@ -1,6 +1,24 @@
-﻿<Properties StartupItem="AS.Google.Analytics.Touch/AS.Google.Analytics.Touch.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.heleny" />
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="AS.Google.Analytics.Touch/GoogleAnalyticsTracker.cs">
+    <Files>
+      <File FileName="AS.Google.Analytics.Touch/GoogleAnalyticsTracker.cs" Line="20" Column="1" />
+      <File FileName="../AS.Google.Analytics/AS.Google.Analytics/IGoogleAnalyticsTracker.cs" Line="11" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AS.Google.Analytics.Touch" expanded="True">
+            <Node name="AS.Google.Analytics.Touch" expanded="True">
+              <Node name="Packages" expanded="True">
+                <Node name="Xamarin.Google.iOS.Analytics" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
