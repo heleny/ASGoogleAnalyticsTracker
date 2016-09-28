@@ -1,5 +1,6 @@
 ﻿using System;
 using Google.Analytics;
+using AS.Google.Analytics;
 
 namespace AS.Google.Analytics.Touch
 {
@@ -12,20 +13,17 @@ namespace AS.Google.Analytics.Touch
         private GoogleAnalyticsTracker(string trackingID) {
             trackingId = trackingID;
             Gai.SharedInstance.Logger.SetLogLevel(LogLevel.Info);
-#if (DEBUG || ADHOC)
             Gai.SharedInstance.DispatchInterval = 10;
-#else
-            Gai.SharedInstance.DispatchInterval = 24 * 60 * 60;
-#endif
             Gai.SharedInstance.TrackUncaughtExceptions = true;  // tack uncaught exception
             GaTracker = Gai.SharedInstance.GetTracker(trackingId);
             GaTracker.SetAllowIdfaCollection(true);
         }
 
         public static GoogleAnalyticsTracker GetInstance(string trackingID) {
-            if (Instance == null) {
+            if (Instance == null || trackingId != trackingID) {
                 Instance = new GoogleAnalyticsTracker(trackingID);
             }
+
             return Instance;
         }
 

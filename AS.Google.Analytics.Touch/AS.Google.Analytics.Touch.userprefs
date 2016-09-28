@@ -1,16 +1,10 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="AS.Google.Analytics.Touch/GoogleAnalyticsTracker.cs">
-    <Files>
-      <File FileName="AS.Google.Analytics.Touch/GoogleAnalyticsTracker.cs" Line="25" Column="78" />
-      <File FileName="../AS.Google.Analytics/AS.Google.Analytics/IGoogleAnalyticsTracker.cs" Line="11" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+﻿<Properties StartupItem="AS.Google.Analytics.Touch/AS.Google.Analytics.Touch.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.heleny" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="../../helenyang-wp/PropertyTracker.Core/PropertyTracker.Core/Sqlite/DBConnection.cs" line="142" offsetX="696" offsetY="2115" expression="users" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
-  <MonoDevelop.Ide.ItemProperties.AS.Google.Analytics.Touch PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.b7c6b9213f8c332e8dd9e095a5e8f3c5008d823b" />
 </Properties>
