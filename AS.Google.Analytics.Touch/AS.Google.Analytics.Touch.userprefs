@@ -1,17 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="AS.Google.Analytics.Touch/GoogleAnalyticsTracker.cs">
     <Files>
-      <File FileName="AS.Google.Analytics.Touch/GoogleAnalyticsTracker.cs" Line="20" Column="1" />
+      <File FileName="AS.Google.Analytics.Touch/GoogleAnalyticsTracker.cs" Line="15" Column="66" />
       <File FileName="../AS.Google.Analytics/AS.Google.Analytics/IGoogleAnalyticsTracker.cs" Line="11" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AS.Google.Analytics.Touch" expanded="True">
-            <Node name="AS.Google.Analytics.Touch" expanded="True">
-              <Node name="Packages" expanded="True">
-                <Node name="Xamarin.Google.iOS.Analytics" selected="True" />
-              </Node>
+            <Node name="AS.Google.Analytics.Touch" expanded="True" selected="True">
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="Packages" expanded="True" />
             </Node>
           </Node>
         </State>

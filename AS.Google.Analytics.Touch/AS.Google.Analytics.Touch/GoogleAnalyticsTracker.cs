@@ -4,28 +4,24 @@ using AS.Google.Analytics;
 
 namespace AS.Google.Analytics.Touch
 {
-    public class GoogleAnalyticsTracker : IGoogleAnalyticsTracker
-    {
+    public class GoogleAnalyticsTracker : IGoogleAnalyticsTracker {
+
         private const string OFFLINE = "Offline";
         private static string trackingId;
         private static GoogleAnalyticsTracker Instance;
 
-        private GoogleAnalyticsTracker(string trackingID) {
+        private GoogleAnalyticsTracker(string trackingID, int dispatchInterval) {
             trackingId = trackingID;
             Gai.SharedInstance.Logger.SetLogLevel(LogLevel.Info);
-#if (DEBUG || ADHOC)
-            Gai.SharedInstance.DispatchInterval = 10;
-#else
-            Gai.SharedInstance.DispatchInterval = 24 * 60 * 60;
-#endif
-            Gai.SharedInstance.TrackUncaughtExceptions = true;  // tack uncaught exception
+            Gai.SharedInstance.DispatchInterval = dispatchInterval;
+            Gai.SharedInstance.TrackUncaughtExceptions = true;
             GaTracker = Gai.SharedInstance.GetTracker(trackingId);
             GaTracker.SetAllowIdfaCollection(true);
         }
 
-        public static GoogleAnalyticsTracker GetInstance(string trackingID) {
+        public static GoogleAnalyticsTracker GetInstance(string trackingID, int dispatchInterval) {
             if (Instance == null || trackingId != trackingID) {
-                Instance = new GoogleAnalyticsTracker(trackingID);
+                Instance = new GoogleAnalyticsTracker(trackingID, dispatchInterval);
             }
 
             return Instance;

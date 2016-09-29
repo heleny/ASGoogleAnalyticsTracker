@@ -10,22 +10,18 @@ namespace AS.Google.Analytics.Droid
         private static string trackingId;
         private static GoogleAnalyticsTracker Instance;
 
-        private GoogleAnalyticsTracker(string trackingID) {
+        private GoogleAnalyticsTracker(string trackingID, int dispatchPeriod) {
             trackingId = trackingID;
             var analytics = GoogleAnalytics.GetInstance (Application.Context);
-#if (DEBUG || ADHOC)
-            analytics.SetLocalDispatchPeriod (10);
-#else
-            analytics.SetLocalDispatchPeriod(24 * 60 * 60);
-#endif
+            analytics.SetLocalDispatchPeriod (dispatchPeriod);
             GaTracker = analytics.NewTracker(trackingId);
             GaTracker.EnableAdvertisingIdCollection(true);
             GaTracker.EnableExceptionReporting(true);
         }
 
-        public static GoogleAnalyticsTracker GetInstance(string trackingID) {
+        public static GoogleAnalyticsTracker GetInstance(string trackingID, int dispatchPeriod) {
             if (Instance == null || trackingId != trackingID) {
-                Instance = new GoogleAnalyticsTracker(trackingID);
+                Instance = new GoogleAnalyticsTracker(trackingID, dispatchPeriod);
             }
 
             return Instance;
